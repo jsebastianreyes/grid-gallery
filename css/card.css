@@ -1,0 +1,49 @@
+.card{
+  cursor: pointer;
+  position: relative;
+  block-size: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.card-content{
+  position: absolute;
+  block-size: 100%;
+  inline-size: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 1rem;
+
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* transition: all 1s; */
+  /* transition: all 10s; */
+  cursor: pointer;
+
+}
+
+.card-contentTown{
+ font: var(--body1-bold);
+}
+
+
+
+.card p{
+  margin: 0;
+  transition: opacity .3s;
+}
+
+.card-content:focus-within .button, .card-content:hover .button{
+  opacity: 1;
+   transform: scale(1);
+}
+
+.card-content:focus-within, .card-content:hover{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  transition: all 1s;
+}
+
+.card-content:focus-within p, .card-content:hover p{
+  opacity: 0;
+}

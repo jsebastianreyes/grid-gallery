@@ -1,0 +1,59 @@
+[class^="icon-"], [class*=" icon-"] {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  background-size: cover;
+  display: inline-block;
+}
+.icon-gps{
+  background-image: url(../icons/map.svg);
+  /* transform: translateY(2px); */
+}
+
+.button{
+ background: rgba(0, 162, 255, 1);
+ color: var(--white);
+ font:var(--body1-bold);
+ font-size: 1rem;
+ border: none;
+ border-radius: 50%;
+ block-size: 4rem;
+ inline-size: 4rem;
+ position: absolute;
+ inset-block-start: calc(50% - 2rem);
+ inset-inline-start: calc(50% - 2rem);
+ opacity: 0;
+ outline: none;
+ transition: all .5s;
+ transform: scale(.8);
+ cursor: pointer;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+
+
+}
+
+.button span{
+  display: none;
+}
+
+@media screen and (min-width:1024px){
+  .button span{
+    display: block;
+  }
+
+  .button{
+    inline-size: 14.18rem;
+    block-size: 3.07rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    /* inset-block-start: calc(50% - 5rem); */
+     inset-inline-start: calc(50% - 7.09rem);
+     padding-block: .5rem;
+     padding-inline:1rem;
+     gap: .5rem;
+     align-items: center;
+     cursor: pointer;
+  }
+}

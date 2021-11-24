@@ -1,0 +1,17 @@
+::-webkit-scrollbar{
+  background:white;
+  inline-size: .4rem;
+  block-size: .4rem;
+}
+::-webkit-scrollbar-button{
+  background: transparent;
+  display: none;
+}
+::-webkit-scrollbar-track{
+  /* background:red ; */
+}
+
+::-webkit-scrollbar-thumb{
+  background:#000;
+  border-radius: 12rem;
+}
